@@ -42,7 +42,7 @@ main {
     padding: 2.4rem 1.6rem;
 }
 
-.topp {
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -85,4 +85,41 @@ main {
 }
 
 /* Byt plats på dem när det finns plats */
+@media (min-width: 800px) {
 
+
+    .hamburgare {
+        display: none;
+    }
+
+    .meny {
+        display: flex;
+        gap: 2.4rem;
+        font-weight: 700;
+    }
+
+    .header {
+        padding: 2.4rem 4rem;
+    }
+
+
+}
+
+/* ===================================================================
+   DÖLJ FÖR ÖGAT, BEHÅLL FÖR SKÄRMLÄSAREN
+
+   Används när en knapp bara har en ikon och behöver ett namn ändå,
+   som hamburgaren ovan. Skriv ALDRIG display: none för det —
+   då försvinner namnet.
+   =================================================================== */
+
+.dold {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
