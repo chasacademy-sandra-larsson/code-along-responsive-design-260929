@@ -90,7 +90,36 @@ input {
     cursor: pointer;
 }
 
-/* --- På rad när det finns plats --- */
+
+@media (min-width: 700px) {
+    .bokning {
+        display: flex;
+        flex-direction: column;
+        padding: 2.4rem 3.2rem;
+    }
+
+    .rad {
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    .falt {
+        flex: 1 1 0; 
+    }
+
+
+    .falt-smal {
+        flex: 0 0 10rem;
+    }
+
+    .knapp {
+        width: auto;
+        margin-left: auto;
+    }
+
+}
+
+
 
 /* ===================================================================
    TRE FLEX-VÄRDEN ATT KUNNA
