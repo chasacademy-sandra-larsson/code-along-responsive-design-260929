@@ -23,6 +23,7 @@ html {
     /* 62.5 % av användarens grundstorlek ger 1 rem = 10px */
  } /* Om inte detta sätts så är 1 rem = 16px */
 
+ 
 body {
     font-family: Georgia, 'Times New Roman', serif;
     font-size: 1.6rem;
